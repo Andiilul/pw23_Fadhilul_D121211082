@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form</title>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td class="inputTextLabel">Text:</td>
+				<td><input class="inputText"/></td>
+			</tr>
+			<tr>
+				<td class="inputTextLabel">Password :</td>
+				<td><input class="inputText"/></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<section class="inputRadio">
+						<div>
+              <label for="radio1">Radio 1</label>
+							<input
+								type="radio"
+								id="radio1"
+								name="input-radio"
+								value="Radio 1"
+							/>
+						</div>
+						<div>
+              <label for="radio2">Radio 2</label>
+							<input
+								type="radio"
+								id="radio2"
+								name="input-radio"
+								value="Radio 2"
+							/>
+						</div>
+					</section>
+				</td>
+			</tr>
+      <tr>
+        <td colspan="2">
+          <section class="inputRadio">
+						<div>
+              <label for="Checkbox1">Checkbox 1</label>
+							<input
+								type="Checkbox"
+								id="Checkbox1"
+								name="input-Checkbox"
+								value="Checkbox 1"
+							/>
+						</div>
+						<div>
+              <label for="Checkbox2">Checkbox 2</label>
+							<input
+								type="Checkbox"
+								id="Checkbox2"
+								name="input-Checkbox"
+								value="Checkbox 2"
+							/>
+						</div>
+					</section>          
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Combo Box
+        </td>
+        <td>
+          <select>
+            <option value="">Opt1</option>
+            <option value="">Opt2</option>
+            <option value="">Opt3</option>
+            <option value="">Opt4</option>
+          </select>
+        </td>
+      </tr>
+      <tr >
+        <td>
+          TextArea:
+        </td>
+        <td>
+          <textarea placeholder="Input Some'ing"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td class="buttonCells" colspan="2">
+          <button>
+            Button
+          </button>
+        </td>
+      </tr>
+		</table>
+	</body>
+	<style>
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+		table {
+			border-collapse: collapse;
+			scale: 120%;
+		}
+		td {
+			border: 1px black solid;
+		}
+		.inputText:focus{
+      outline: none;
+		}
+    .inputText{
+      border:none
+    }
+		.inputRadio {
+			display: flex;
+      gap:20px
+		}
+    button{
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      padding: 10px;
+    }
+    td{
+      padding: 10px;
+    }
+    .buttonCells{
+      padding: 0;
+
+    }
+	</style>
+</html>

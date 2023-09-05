@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Table Complex</title>
+	</head>
+	<body>
+		<table>
+			<thead>
+				<tr>
+					<th class="tableCells blank"></th>
+					<th class="tableCells">Kolom 1</th>
+					<th class="tableCells">Kolom 2</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th class="tableCells">Baris 1</th>
+					<td class="tableCells">Baris 1 Kolom 1</td>
+					<td class="tableCells">Baris 1 Kolom 2</td>
+				</tr>
+				<tr>
+					<th class="tableCells">Baris 2</th>
+					<td class="tableCells">Baris 2 Kolom 1</td>
+					<td class="tableCells">Baris 2 Kolom 2</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+    *{
+      font-family: 'Poppins', sans-serif;
+    }
+    body{
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+      align-items: center;
+    }
+
+    table{
+      border-collapse: collapse;
+      scale:150%;
+      text-align: left;
+    }
+    .tableCells{
+      border : solid 1px black ;
+      padding: 10px;
+    }
+    .blank{
+      background-color: black;
+    }
+  </style>
+</html>
